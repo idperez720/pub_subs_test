@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import rospy
-from std_msgs import String
+from std_msgs.msg import String
 
 def talker():
     pub = rospy.Publisher('topic', String, queue_size=10)

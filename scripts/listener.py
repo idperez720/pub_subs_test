@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import rospy
-from std_msgs import String
+from std_msgs.msg import String
 
 def callback(data):
     rospy.loginfo(rospy.get_caller_id() + "Recibido: %", data.data)
