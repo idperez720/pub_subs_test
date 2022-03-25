@@ -3,7 +3,7 @@ import rospy
 from std_msgs.msg import String
 
 def callback(data):
-    rospy.loginfo(rospy.get_caller_id() + "Recibido: %", data.data)
+    rospy.loginfo(rospy.get_caller_id() + " Recibido: ", data.data)
 
 
 def listener():
